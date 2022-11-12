@@ -5,7 +5,7 @@ import Link from "next/link";
 import HomeNav from "../components/HomeNav.jsx";
 
 export default function Home() {
-  function getWindowDimensions() {
+  function useGetWindowDimensions() {
     let win = { innerWidth: 1080 };
 
     useEffect(() => {
@@ -22,12 +22,12 @@ export default function Home() {
   }
   function useWindowDimensions() {
     const [windowDimensions, setWindowDimensions] = useState(
-      getWindowDimensions()
+      useGetWindowDimensions()
     );
 
     useEffect(() => {
       function handleResize() {
-        setWindowDimensions(getWindowDimensions());
+        setWindowDimensions(useGetWindowDimensions());
       }
 
       window.addEventListener("resize", handleResize);
