@@ -2,8 +2,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import HomeNav from "../components/HomeNav.jsx";
-import Share from "../components/Share.jsx";
+import HomeNav from "components/HomeNav.jsx";
+import Share from "components/Share.jsx";
 
 export default function Home() {
   function useGetWindowDimensions() {
