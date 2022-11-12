@@ -12,7 +12,7 @@ import {
   CopyUrlText,
   ShareContainer,
   ShareIconWrapper,
-} from "components/ShareCard.Elements.jsx";
+} from "Components/ShareCard.Elements.jsx";
 import {
   INVESTOR_FRONTEND,
   shareExpertMessageFormatter,
