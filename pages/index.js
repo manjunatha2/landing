@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import HomeNav from "../components/HomeNav.jsx";
+import Share from "../components/Share.jsx";
 
 export default function Home() {
   function useGetWindowDimensions() {
@@ -97,9 +98,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <div>Share This Link</div>
-          <div></div>
+          <div className="w-full pb-2 justify-center p-2">
+            <div>Share This Link</div>
+            <div>
+              <Share />
+            </div>
+          </div>
         </div>
       </main>
     </div>
