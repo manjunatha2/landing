@@ -46,7 +46,7 @@ function HomeNav({ onUserDemoSubmit }) {
       <div className={toggle ? show : "hidden"}>
         <p>
           <button className="w-30 pr-2  pl-2 h-5 text-blue_btn font-base text-lg rounded-s bg-light_blue_bg">
-            Explore
+            Explore Now
           </button>
         </p>
         <p>
